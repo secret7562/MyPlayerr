@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         VideoView videoView = findViewById(R.id.videoView);
         int id = getResources().getIdentifier("test.mp4","raw",this.getPackageName());
         final String path = "android.resource://" + this.getPackageName() + "/" + id;
-        Log.d("URI PATH");
+        Log.d("URI PATH", path);
         videoView.setVideoURI(Uri.parse(path));
 
         player = MediaPlayer.create(this,R.raw.abc);
